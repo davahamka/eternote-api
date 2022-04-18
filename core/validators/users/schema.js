@@ -2,7 +2,8 @@ const Joi = require("joi");
 
 const UserPayloadSchema = Joi.object({
   name: Joi.string().required(),
-  age: Joi.number().required(),
+  email: Joi.string().email().required(),
+  password: Joi.string(),
 });
 
 module.exports = { UserPayloadSchema };

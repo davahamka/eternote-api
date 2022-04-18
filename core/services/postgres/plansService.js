@@ -40,7 +40,7 @@ module.exports = {
     const plan = await models.Plan.update(data, {
       where: {
         id,
-      }
+      },
     });
     return plan;
   },

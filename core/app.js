@@ -6,6 +6,7 @@ const NotFoundError = require("./exceptions/NotFoundError");
 const { errorHandler } = require("./middlewares/error-handler-middleware");
 const morgan = require("morgan");
 const PORT = 5000;
+require("dotenv").config();
 
 const app = express();
 
