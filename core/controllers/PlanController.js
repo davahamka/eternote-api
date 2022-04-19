@@ -4,7 +4,7 @@ const {
   findPlanById,
   removePlan,
   editPlan,
-} = require("../services/postgres/PlansService");
+} = require("../services/postgres/plansService");
 const PlansValidator = require("../validators/plans");
 const NotFoundError = require("../exceptions/NotFoundError");
 
